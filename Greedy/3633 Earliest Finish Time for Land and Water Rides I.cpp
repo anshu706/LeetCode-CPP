@@ -6,7 +6,7 @@ public:
                            vector<int> &waterStartTime,
                            vector<int> &waterDuration)
     {
-
+ 
         int n = landStartTime.size();
         int m = waterStartTime.size();
 
