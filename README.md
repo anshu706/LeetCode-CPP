@@ -1351,3 +1351,45 @@ Understanding traversal properties deeply makes tree construction problems much 
 
 <img width="800" height="450" alt="image" src="https://github.com/user-attachments/assets/eca53b86-04cb-4719-8a06-cd9f61df8ca6" />
 
+Question: 107 – Binary Tree Level Order Traversal II
+
+💻 Approach:
+
+We are given the root of a binary tree.
+
+Our task: return the level order traversal from bottom to top.
+
+1️⃣ If the root is NULL, return an empty result.
+
+2️⃣ Use a queue to perform Breadth-First Search (BFS).
+
+3️⃣ Push the root node into the queue.
+
+4️⃣ While the queue is not empty:
+
+Get the current level size.
+
+Traverse all nodes of that level.
+
+Store their values in a temporary vector.
+
+Push their left and right children (if they exist) into the queue.
+
+5️⃣ Append each level’s values into the result.
+
+6️⃣ After completing BFS (top-down order), reverse the result to get bottom-up order.
+
+7️⃣ Return the final reversed result.
+
+⏱ Time Complexity: O(n)
+Each node is visited exactly once.
+
+📦 Space Complexity: O(n)
+Queue and result storage may hold up to n nodes in the worst case.
+
+✨ Key Insight:
+
+Instead of modifying BFS logic to insert levels at the beginning (which can be inefficient), it’s cleaner and more readable to collect normally and reverse once at the end.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/55f121ac-cb6e-4fd7-a7f5-874a569ae8c1" />
+
