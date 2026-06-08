@@ -14,4 +14,4 @@ public:
 
         return (mask - 1) ^ n;
     }
-};
+}; 
