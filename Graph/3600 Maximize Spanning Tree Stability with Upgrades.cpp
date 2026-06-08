@@ -82,7 +82,7 @@ public:
             candidates.insert(e[2]);
             candidates.insert(e[2] * 2);
         }
-
+ 
         vector<int> vals(candidates.begin(), candidates.end());
 
         // Check if spanning tree is even possible
