@@ -1,6 +1,6 @@
 class Solution
 {
-public:
+public: 
     string getHappyString(int n, int k)
     {
         // Each position has 2 choices (except first which has 3)
