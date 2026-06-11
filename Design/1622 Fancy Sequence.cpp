@@ -51,4 +51,4 @@ public:
             return -1;
         return (seq[idx] * m % MOD + a) % MOD;
     }
-};
+}; 
