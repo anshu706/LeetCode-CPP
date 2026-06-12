@@ -1,5 +1,5 @@
 class Robot
-{
+{ 
 public:
     int w, h;
     int x = 0, y = 0;
